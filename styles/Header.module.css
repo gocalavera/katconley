@@ -1,0 +1,11 @@
+.nav {
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+}
