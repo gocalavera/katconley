@@ -9,3 +9,10 @@
 .nav-item:hover {
     cursor: pointer;
 }
+
+.mobile-nav {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
