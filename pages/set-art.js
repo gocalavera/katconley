@@ -16,7 +16,7 @@ export default function setArt({setArt}) {
     console.log(setArt);
     return (
         <div id={styles["set-art"]}>
-            <h1>Set Art</h1>
+            <h1>Scenic Art</h1>
             <div className={styles["set-art-container"]}>
                 {setArt.map((art, i) => (
                     <div key={i}>
