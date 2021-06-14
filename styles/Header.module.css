@@ -11,3 +11,13 @@
 .nav-item:hover {
   cursor: pointer;
 }
+
+.kat-homelink {
+  height: 50px;
+  width: 100vw;
+  display: flex;
+  padding: 20px;
+  background: black;
+  color: white;
+  font-size: 2.5rem;
+}
