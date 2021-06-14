@@ -1,3 +1,12 @@
 #contact {
-     
+  background-color: black;
+  color: white;
+}
+
+#contact a {
+  color: white;
+}
+
+.contact {
+  margin-top: 200px;
 }

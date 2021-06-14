@@ -1,15 +1,17 @@
 #set-design {
+  background-color: black;
+  color: white;
 }
 
 .set-design-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .image {
-    /* max-width: 40vw;
+  /* max-width: 40vw;
     max-height: 40vw; */
-    margin: 20px auto;
+  margin: 20px auto;
 }
