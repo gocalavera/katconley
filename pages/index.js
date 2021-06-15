@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Header from "../components/Header";
 import styles from "../styles/Home.module.css";
-// import 'bulma/css/bulma.min.css';
+import 'bulma/css/bulma.min.css';
 
 export default function Home() {
     return (
@@ -20,7 +20,7 @@ export default function Home() {
                     <div style={{color: "white"}}>
                         <Header />
                     </div>
-                    <div className={styles["hero-name"]}>Kat Conley</div>
+                    <div className={`${styles["hero-name"]}`}>Kat Conley</div>
                 </div>
             </main>
 
