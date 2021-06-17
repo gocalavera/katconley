@@ -47,6 +47,30 @@ export const getSetArt = async () => {
     return graphQLClient.request(query);
 };
 
+export const getSetArtSubpage = async (pageName) => {
+    const query = gql`
+        query getSetArtSubpage($pageName: String!) {
+            scenicArtSubpageCollection(where: {pageTitle: $pageName}) {
+                items {
+                    pageTitle
+                    imagesCollection {
+                        items {
+                            url
+                        }
+                    }
+                }
+            }
+        }
+    `;
+
+    const variables = {
+        pageName
+    }
+
+    return graphQLClient.request(query, variables);
+};
+
+
 export const getSetDesign = async () => {
     const query = gql`
         {

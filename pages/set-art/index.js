@@ -1,6 +1,7 @@
 import React from "react";
-import {getSetArt} from "../contentful-helper";
-import styles from "../styles/SetArt.module.css";
+import {getSetArt} from "../../contentful-helper";
+import styles from "../../styles/SetArt.module.css";
+import Link from "next/link";
 
 export async function getStaticProps() {
     const setArt = await getSetArt();
@@ -19,10 +20,12 @@ export default function setArt({setArt}) {
             <h1>Scenic Art</h1>
             <div className={styles["set-art-container"]}>
                 {setArt.map((art, i) => (
-                    <div key={i}>
-                        <img className={styles["image"]} src={art.image.url} />
-                        <div>{art.name}</div>
-                    </div>
+                    <Link href={`set-art/${art.pageName}`} key={i}>
+                        <div>
+                            <img className={styles["image"]} src={art.image.url} />
+                            <div>{art.name}</div>
+                        </div>
+                    </Link>
                 ))}
             </div>
         </div>
