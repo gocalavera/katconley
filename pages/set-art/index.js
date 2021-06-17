@@ -21,10 +21,12 @@ export default function setArt({setArt}) {
             <div className={styles["set-art-container"]}>
                 {setArt.map((art, i) => (
                     <Link href={`set-art/${art.pageName}`} key={i}>
-                        <div>
-                            <img className={styles["image"]} src={art.image.url} />
-                            <div>{art.name}</div>
-                        </div>
+                        <div className={styles["image-container"]}>
+                                <img className={styles["image"]} src={art.image.url} />
+                                <div className={styles["image-overlay"]}>
+                                    <div>{art.name}</div>
+                                </div>
+                            </div>
                     </Link>
                 ))}
             </div>

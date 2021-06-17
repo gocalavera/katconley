@@ -11,7 +11,7 @@
 }
 
 .image {
-    max-width: 40vw;
-    max-height: 40vw;
+    width: 500px; /* temp width */
+  height: 375px; /* temp height */
     margin: 20px auto;
 }

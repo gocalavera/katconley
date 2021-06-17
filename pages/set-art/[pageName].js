@@ -35,8 +35,8 @@ export default function SetArtSubpage({setArtSubpage}) {
         <div id={styles.subpage}>
             <div>{setArtSubpage.pageTitle}</div>
             <div className={styles["subpage-container"]}>
-                {setArtSubpage[0].imagesCollection.items.map((image) => (
-                    <img className={styles.image} src={image.url} alt={setArtSubpage.pageTitle}/>
+                {setArtSubpage[0].imagesCollection.items.map((image, i) => (
+                    <img key={i} className={styles.image} src={image.url} alt={setArtSubpage.pageTitle}/>
                 ))}
             </div>
         </div>

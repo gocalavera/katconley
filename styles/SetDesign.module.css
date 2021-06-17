@@ -10,8 +10,35 @@
   width: 100%;
 }
 
+.image-container {
+  margin: 20px 0;
+  position: relative;
+}
+
 .image {
-  /* max-width: 40vw;
-    max-height: 40vw; */
-  margin: 20px auto;
+  display: block;
+  width: 500px; /* temp width */
+  height: 375px; /* temp height */
+}
+
+.image-overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  transition: .2s ease;
+  opacity:1;
+  color: white;
+  font-size: 28px;
+  padding: 20px;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container:hover .image-overlay {
+  font-size: 35px;
+  background: rgba(0, 0, 0, .7);
 }

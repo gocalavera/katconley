@@ -26,9 +26,11 @@ export default function setDesign({setDesign}) {
                     <div key={i}>
                         {/* <Link href={`set-design/${design.pageName.split(" ").join("-").toLowerCase()}`}> */}
                         <Link href={`set-design/${design.pageName}`}>
-                            <div>
+                            <div className={styles["image-container"]}>
                                 <img className={styles["image"]} src={design.image.url} />
-                                <div>{design.name}</div>
+                                <div className={styles["image-overlay"]}>
+                                    <div>{design.name}</div>
+                                </div>
                             </div>
                         </Link>
                     </div>
