@@ -21,6 +21,7 @@ export default function setArt({setArt}) {
                 {setArt.map((art, i) => (
                     <div key={i}>
                         <img className={styles["image"]} src={art.image.url} />
+                        <div>{art.name}</div>
                     </div>
                 ))}
             </div>

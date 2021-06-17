@@ -34,6 +34,7 @@ export const getSetArt = async () => {
             setArtCollection {
                 items {
                     name
+                    pageName
                     date
                     image {
                         url
@@ -52,6 +53,7 @@ export const getSetDesign = async () => {
             setDesignCollection {
                 items {
                     name
+                    pageName
                     date
                     image {
                         url
@@ -63,4 +65,29 @@ export const getSetDesign = async () => {
 
     return graphQLClient.request(query);
 };
+
+
+export const getSetDesignSubpage = async (pageName) => {
+    const query = gql`
+        query getSetDesignSubpage($pageName: String!) {
+            setDesignSubpageCollection(where: {pageTitle: $pageName}) {
+                items {
+                    pageTitle
+                    imagesCollection {
+                        items {
+                            url
+                        }
+                    }
+                }
+            }
+        }
+    `;
+
+    const variables = {
+        pageName
+    }
+
+    return graphQLClient.request(query, variables);
+};
+
 

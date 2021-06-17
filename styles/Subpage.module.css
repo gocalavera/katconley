@@ -1,0 +1,17 @@
+#subpage {
+    background-color: black;
+    color: white;
+}
+
+.subpage-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.image {
+    max-width: 40vw;
+    max-height: 40vw;
+    margin: 20px auto;
+}
