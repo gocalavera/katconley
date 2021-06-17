@@ -29,7 +29,7 @@ export default function setDesign({setDesign}) {
                             <div className={styles["image-container"]}>
                                 <img className={styles["image"]} src={design.image.url} />
                                 <div className={styles["image-overlay"]}>
-                                    <div>{design.name}</div>
+                                    <div className={styles["image-text"]}>{design.name}</div>
                                 </div>
                             </div>
                         </Link>

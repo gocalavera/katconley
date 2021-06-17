@@ -24,7 +24,7 @@ export default function setArt({setArt}) {
                         <div className={styles["image-container"]}>
                                 <img className={styles["image"]} src={art.image.url} />
                                 <div className={styles["image-overlay"]}>
-                                    <div>{art.name}</div>
+                                    <div className={styles["image-text"]}>{art.name}</div>
                                 </div>
                             </div>
                     </Link>

@@ -24,9 +24,9 @@
 .image-overlay {
   position: absolute; 
   bottom: 0; 
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0);
   width: 100%;
-  transition: .2s ease;
+  transition: .3s ease;
   opacity:1;
   color: white;
   font-size: 28px;
@@ -38,7 +38,16 @@
   align-items: center;
 }
 
+.image-text {
+  opacity: 0;
+}
+
 .image-container:hover .image-overlay {
-  font-size: 35px;
-  background: rgba(0, 0, 0, .7);
+  /* font-size: 35px; */
+  background: rgba(230, 230, 230, .7);
+  color: black;
+}
+
+.image-container:hover .image-text {
+  opacity: 1;
 }
